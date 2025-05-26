@@ -18,7 +18,7 @@
       color: $box-color;
       font-weight: 600;
       text-decoration: none;
-      transition: color  0.3s ease;
+      transition: color 0.3s ease;
 
       &:hover,
       &.active {
@@ -35,15 +35,19 @@
         &.btn-outline {
           background-color: transparent;
           color: $primary-color;
-          }
+        }
       }
     }
   }
 }
 
 .hero {
-  background: linear-gradient(0deg, rgba(68, 74, 85, 0.79) 0%, rgba(68, 74, 85, 0.79) 100%),
-              url('../assets/img/bg-hero.jpg') center/cover no-repeat;
+  background: linear-gradient(
+      0deg,
+      rgba(68, 74, 85, 0.79) 0%,
+      rgba(68, 74, 85, 0.79) 100%
+    ),
+    url("../assets/img/bg-hero.jpg") center/cover no-repeat;
   height: 664px;
   position: relative;
   border-top-left-radius: 40px;
@@ -90,17 +94,26 @@
   padding: 152px 182px 0px 182px;
   text-align: center;
 
+  h2 {
+    margin-bottom: 96px;
+  }
+
   .cards {
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    justify-content: center;
     flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 64px;
+  }
+
+  h4 {
+    text-transform: uppercase;
   }
 
   .card-servicio {
     background-color: $box-color-light;
     border-radius: 16px;
-    padding: 40px 30px;
+    padding: 24px;
     flex: 1 1 30%;
     max-width: 370px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -112,7 +125,6 @@
       p {
         color: white;
       }
+    }
   }
-  }
-
 }

@@ -14,7 +14,7 @@ body {
 h1 {
   color: $background-color;
   font-size: 58px;
-} 
+}
 
 h2 {
   color: $primary-color;
@@ -28,23 +28,22 @@ h3 {
   margin-top: 20px;
 }
 
-h4 { 
+h4 {
   color: $box-color;
   font-size: 20px;
   font-style: normal;
-  text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   text-align: center;
   font-family: $font-main;
   font-weight: 700;
   line-height: 1.2;
 }
-
-h3 { font-size: 1.75rem; }
-h4 { font-size: 1.5rem; }
-h5 { font-size: 1.25rem; }
 
 p {
   font-size: 16px;
@@ -52,7 +51,7 @@ p {
   color: $secondary-color;
 }
 
-.hero p{
+.hero p {
   display: flex;
   justify-content: center;
   color: $background-color;
