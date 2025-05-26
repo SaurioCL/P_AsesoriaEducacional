@@ -1,0 +1,72 @@
+.site-header {
+  padding: 24px 72px;
+
+  .logo {
+    width: 140px;
+    height: auto;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      color: $box-color;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color  0.3s ease;
+
+      &:hover,
+      &.active {
+        color: $accent-color-light;
+        font-weight: 600;
+      }
+
+      &.btn {
+        border-radius: 6px;
+        border: 1px solid $primary-color;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &.btn-outline {
+          background-color: transparent;
+          color: $primary-color;
+          }
+      }
+    }
+  }
+}
+
+.hero {
+  background: linear-gradient(0deg, rgba(68, 74, 85, 0.79) 0%, rgba(68, 74, 85, 0.79) 100%),
+              url('../assets/img/bg-hero.jpg') center/cover no-repeat;
+  height: 664px;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 175px 182px;
+
+  .hero-contain {
+    width: 100%;
+  }
+}
+
+.nosotros {
+  position: relative;
+  top: -12px;
+  background-color: $background-color;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 80px 185px;
+  z-index: 2;
+  border: 2px solid red;
+}
+

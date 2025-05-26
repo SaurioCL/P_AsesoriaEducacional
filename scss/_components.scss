@@ -1,0 +1,45 @@
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $box-color-light;
+  }
+}
+
+.btn-secondary {
+  background-color: $box-color-light;
+  color: $primary-color;
+  display: flex;
+  height: 40px;
+  padding: 0px 16px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $box-color;
+  }
+}
