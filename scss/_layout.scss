@@ -88,7 +88,31 @@
 .servicios {
   background-color: $background-color;
   padding: 152px 182px 0px 182px;
-  flex-direction: row;
-  align-items: center;
   text-align: center;
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+
+  .card-servicio {
+    background-color: $box-color-light;
+    border-radius: 16px;
+    padding: 40px 30px;
+    flex: 1 1 30%;
+    max-width: 370px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $primary-color;
+
+      h3,
+      p {
+        color: white;
+      }
+  }
+  }
+
 }
