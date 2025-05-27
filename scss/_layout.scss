@@ -171,10 +171,11 @@
   margin-left: 0;
 
   .contacto-contain {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    overflow: hidden;
+    // justify-content: space-between;
+    margin-right: 74px;
+    // overflow: hidden;
   }
 
   .contacto-info {
@@ -185,7 +186,9 @@
     padding-top: 64px;
     padding-left: 72px;
 
-    h2, p, strong {
+    h2,
+    p,
+    strong {
       color: $background-color;
       text-align: start;
     }
@@ -219,10 +222,14 @@
   }
 
   .contacto-form {
+    position: absolute;
     background-color: white;
-    flex: 1;
-    padding: 60px 40px;
-    border-radius: 0 0 12px 0;
+    z-index: 2;
+    margin-left: 732px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+    padding: 40px;
+    border-radius: 12px;
 
     display: flex;
     flex-direction: column;
