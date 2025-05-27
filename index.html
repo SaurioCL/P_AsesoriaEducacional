@@ -174,49 +174,40 @@
     <!-- TESTIMONIOS -->
     <!-- CONTACTO -->
     <section id="contacto" class="contacto">
-      <div class="container">
-        <h2 class="text-center mb-4">
-          Conversemos sobre cómo fortalecer tu institución
-        </h2>
-        <p>
-          Responderemos tu solicitud en menos de 24 horas. Confidencialidad
-          garantizada
-        </p>
-        <form class="w-75 mx-auto">
-          <div class="mb-3">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Nombre"
-              required
-            />
+      <div class="contacto-contain">
+        <div class="contacto-info">
+          <h2>Conversemos sobre cómo fortalecer tu conocimiento legal en Educación.</h2>
+          <p>Responderemos tu solicitud en menos de 24 horas. Confidencialidad garantizada.</p>
+          <div class="item-contacto">
+            <img src="assets/icons/phone.svg" alt="Teléfono">
+            <div>
+              <strong>¡Hablemos!</strong>
+              <p>+56 9</p>
+            </div>
           </div>
-          <div class="mb-3">
-            <input
-              type="number"
-              class="form-control"
-              placeholder="Teléfono"
-              required
-            />
+          <div class="item-contacto">
+            <img src="assets/icons/mail.svg" alt="Correo">
+            <div>
+              <strong>Email</strong>
+              <p>contacto@ejemplo.cl</p>
+            </div>
           </div>
-          <div class="mb-3">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Correo electrónico"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <textarea
-              class="form-control"
-              rows="4"
-              placeholder="Mensaje"
-            ></textarea>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
+        </div>
+          
+        <form class="contacto-form">
+          <label>Nombre *</label>
+          <input type="text" class="form-control" placeholder="Escribe tu Nombre Completo" required />
+
+          <label>Teléfono</label>
+          <input type="tel" class="form-control" placeholder="+56 9"/>
+
+          <label>Email *</label>
+          <input type="email" class="form-control" placeholder="Escribe tu Email" required/>
+
+          <label>¿Cómo te podemos ayudar?</label>
+          <textarea class="form-control" placeholder="Descripcion de tu consulta o solicitud" required></textarea>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
         </form>
       </div>
     </section>
