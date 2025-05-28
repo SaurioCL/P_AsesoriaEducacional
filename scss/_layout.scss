@@ -79,12 +79,13 @@
     align-items: center;
     text-align: center;
 
-    h2 {
-      margin-bottom: 24px;
+    p {
+      margin-top: 24px;
     }
 
-    p {
-      margin-bottom: 64px;
+    h4 {
+      margin-top: 64px;
+      text-transform: uppercase;
     }
   }
 }
@@ -182,9 +183,14 @@
     background-color: $primary-color;
     border-radius: 0 16px 16px 0px;
     margin-right: 376px;
+    height: 868px;
     flex: 1;
     padding-top: 64px;
     padding-left: 72px;
+
+    .text-info {
+      margin: 64px 466px 108px 74px;
+    }
 
     h2,
     p,
@@ -196,6 +202,7 @@
     h2 {
       margin-bottom: 24px;
     }
+
     p {
       margin-bottom: 96px;
     }
@@ -223,17 +230,19 @@
 
   .contacto-form {
     position: absolute;
-    background-color: white;
+    background-color: $background-color;
     z-index: 2;
-    margin-left: 732px;
+    right: 0;
+    width: 634px;
     margin-top: 64px;
     margin-bottom: 64px;
     padding: 40px;
     border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 
     label {
       font-weight: 600;
@@ -268,6 +277,51 @@
       &:hover {
         color: $primary-color;
         background-color: $box-color-light;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $primary-color;
+  padding: 24px 72px;
+
+  .footer-contenido {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    .logo-footer {
+      width: 72px;
+      height: auto;
+    }
+
+    p {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      color: $background-color;
+      transform: translateX(-50%);
+      text-align: center;
+      justify-content: center;
+      white-space: nowrap;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 16px;
+
+      a img {
+        width: 20px;
+        height: 20px;
+        opacity: 0.8;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
