@@ -1,0 +1,99 @@
+// === Header ===
+.site-header {
+  padding: 24px 72px;
+
+  .logo {
+    width: 140px;
+    height: auto;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    a {
+      color: $box-color;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover,
+      &.active {
+        color: $accent-color-light;
+        font-weight: 600;
+      }
+
+      &.btn {
+        border-radius: 6px;
+        border: 1px solid $primary-color;
+        font-weight: 600;
+        transition: all 0.3s ease;
+
+        &.btn-outline {
+          background-color: transparent;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// === RESPONSIVE ===
+
+@include respond-to(lg) {
+  .site-header {
+    padding: 20px 48px;
+
+    .logo {
+      width: 120px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    .main-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+
+      a {
+        font-size: 16px;
+        padding: 4px 0;
+      }
+    }
+
+    .btn {
+      align-self: stretch;
+      text-align: center;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .site-header {
+    padding: 16px;
+
+    .logo {
+      width: 100px;
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+}

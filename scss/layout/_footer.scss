@@ -1,0 +1,59 @@
+// === Footer ===
+.footer {
+  background-color: $primary-color;
+  padding: 24px 72px;
+
+  .footer-contenido {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    a p {
+      font-size: 14px;
+      text-decoration: none;
+      color: $background-color;
+      transition: 0.3s ease;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    .logo-footer {
+      width: 72px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    p {
+      position: absolute;
+      margin-bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $background-color;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 16px;
+
+      a {
+        text-decoration: none;
+
+        i {
+          font-size: 24px;
+          color: $background-color;
+          transition: 0.4s ease;
+
+          &:hover {
+            color: $accent-color;
+          }
+        }
+      }
+    }
+  }
+}

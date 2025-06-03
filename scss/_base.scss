@@ -11,6 +11,13 @@ body {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5 {
+  font-family: $font-main;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
 h1 {
   color: $background-color;
   font-size: 58px;
@@ -19,7 +26,6 @@ h1 {
 h2 {
   color: $primary-color;
   font-size: 48px;
-  font-style: normal;
 }
 
 h3 {
@@ -30,18 +36,7 @@ h3 {
 h4 {
   color: $box-color;
   font-size: 20px;
-  font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  text-align: center;
-  font-family: $font-main;
-  font-weight: 700;
-  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 p {
@@ -54,6 +49,5 @@ p {
   display: flex;
   justify-content: center;
   color: $background-color;
-  margin-top: 24px;
-  margin-bottom: 64px;
+  margin: 24px 0 64px;
 }

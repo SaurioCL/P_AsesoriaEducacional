@@ -1,4 +1,13 @@
 @import 'variables';
 @import 'base';
-@import 'layout';
 @import 'components';
+@import "mixins";
+
+// Layout modularizado
+@import 'layout/header';
+@import "layout/hero";
+@import "layout/nosotros";
+@import "layout/servicios";
+@import "layout/faq";
+@import "layout/contacto";
+@import "layout/footer";

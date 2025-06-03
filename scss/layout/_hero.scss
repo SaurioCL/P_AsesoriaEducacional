@@ -1,0 +1,22 @@
+// === Hero ===
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(68, 74, 85, 0.79) 0%,
+      rgba(68, 74, 85, 0.79) 100%
+    ),
+    url("../assets/img/bg-hero.jpg") center/cover no-repeat;
+  height: 664px;
+  position: relative;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 175px 182px;
+
+  .hero-contain {
+    width: 100%;
+  }
+}

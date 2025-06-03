@@ -1,0 +1,10 @@
+{
+  // Evita el formateo automático al guardar
+  "editor.formatOnSave": false,
+
+  // Evita el formateo automático solo en HTML (opcional si quieres seguir formateando JS o CSS)
+  "[html]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null
+  }
+}

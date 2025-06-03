@@ -1,0 +1,27 @@
+// === Nosotros ===
+.nosotros {
+  position: relative;
+  top: -35px;
+  background-color: $background-color;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 152px 182px 0 182px;
+  z-index: 2;
+
+  .nosotros-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+    p {
+      margin-top: 24px;
+    }
+
+    h4 {
+      margin-top: 64px;
+      text-transform: uppercase;
+    }
+  }
+}

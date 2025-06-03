@@ -1,0 +1,34 @@
+// === Preguntas Frecuentes ===
+.faq {
+  background-color: $background-color;
+  padding: 152px 182px 0 182px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 96px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    .faq-item {
+      background-color: $box-color-light;
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      max-width: 600px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $primary-color;
+
+        h3, p {
+          color: white;
+        }
+      }
+    }
+  }
+}
