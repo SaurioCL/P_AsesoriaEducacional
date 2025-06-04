@@ -32,3 +32,33 @@
     }
   }
 }
+
+@include respond-to(xl) {
+  .faq {
+    padding: 96px 48px 0;
+
+    h2 {
+      margin-bottom: 64px;
+    }
+
+    .faq-list {
+      gap: 16px;
+
+      .faq-item {
+        max-width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .faq {
+    padding: 64px 24px 0;
+
+    .faq-item {
+      font-size: 14px;
+      padding: 16px;
+    }
+  }
+}

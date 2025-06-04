@@ -57,3 +57,54 @@
     }
   }
 }
+
+@include respond-to(xl) {
+  footer {
+    padding: 64px 32px;
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .footer-logo {
+      width: 120px;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .footer-social {
+      justify-content: center;
+      gap: 16px;
+
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  footer {
+    padding: 48px 24px;
+
+    .footer-links a {
+      font-size: 13px;
+    }
+
+    .footer-social i {
+      font-size: 18px;
+    }
+  }
+}
