@@ -304,6 +304,30 @@ p {
   color: white;
 }
 
+@media (max-width: 1200px) {
+  .servicios {
+    padding: 96px 48px 0;
+  }
+  .servicios .cards {
+    justify-content: center;
+    gap: 32px;
+  }
+  .servicios .card-servicio {
+    flex: 1 1 calc(50% - 32px);
+    max-width: 100%;
+    height: 360px;
+  }
+}
+@media (max-width: 768px) {
+  .servicios {
+    padding: 64px 24px 0;
+  }
+  .servicios .card-servicio {
+    flex: 1 1 100%;
+    max-width: 100%;
+    height: 360px;
+  }
+}
 .faq {
   background-color: #FFF;
   padding: 152px 182px 0 182px;
@@ -443,23 +467,48 @@ p {
     padding: 48px 32px;
   }
   .contacto .contacto-info .text-info {
-    margin: 0 0 48px 0;
+    margin: 0;
   }
-  .contacto .contacto-info h2,
-  .contacto .contacto-info p,
-  .contacto .contacto-info strong {
+  .contacto .contacto-info .text-info h2,
+  .contacto .contacto-info .text-info p,
+  .contacto .contacto-info .text-info strong {
     text-align: center;
   }
-  .contacto .contacto-info .item-contacto {
+  .contacto .contacto-info .item-contacto-wrapper {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    width: 100%;
+  }
+  .contacto .contacto-info .item-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .contacto .contacto-info .item-contacto i {
+    font-size: 28px;
+  }
+  .contacto .contacto-info .item-contacto strong,
+  .contacto .contacto-info .item-contacto p {
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0;
+    gap: 4px;
   }
   .contacto .contacto-form {
     position: static;
     width: 100%;
-    margin: 0;
+    margin: 24px;
+    margin-left: 24px;
     border-radius: 0 0 16px 16px;
     padding: 32px;
     box-shadow: none;
+    gap: 14px;
   }
 }
 .footer {
