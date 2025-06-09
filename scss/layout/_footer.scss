@@ -95,6 +95,45 @@
   }
 }
 
+@include respond-to(lg) {
+  .footer {
+    padding: 32px 24px;
+    text-align: center;
+
+    .footer-contenido {
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        position: static;
+        transform: none;
+        white-space: normal;
+        margin: 0 auto;
+      }
+      
+      a {
+        text-decoration: none;
+        margin: 0 auto;
+      }
+
+      .logo-footer {
+        max-width: 120px;
+        margin-bottom: 16px;
+      }
+
+      .footer-social {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        a i {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
 @include respond-to(md) {
   footer {
     padding: 48px 24px;
