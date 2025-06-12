@@ -100,6 +100,40 @@ p {
   background-color: #444A55;
 }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup .popup-content {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.popup .popup-content p {
+  margin-bottom: 24px;
+}
+.popup .popup-content .btn {
+  margin-top: 8px;
+}
+
+#popup-confirmacion:target {
+  opacity: 1;
+  visibility: visible;
+}
+
 .site-header {
   padding: 24px 72px;
 }

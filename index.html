@@ -181,7 +181,10 @@
           </div>
         </div>
 
-        <form class="contacto-form">
+        <form class="contacto-form" action="https://formsubmit.co/m.delcampo93@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="#popup-confirmacion">
+          <input type="hidden" name="_captcha" value="false">
+
           <label>Nombre *</label>
           <input type="text" class="form-control" placeholder="Escribe tu Nombre Completo" required/>
           <label>Teléfono</label>
@@ -219,5 +222,11 @@
     </a> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div id="popup-confirmacion" class="popup">
+      <div class="popup-content">
+        <p>¡Gracias por tu mensaje! Te contactaremos pronto.</p>
+        <a href="#" class="btn btn-secondary">Cerrar</a>
+      </div>
+    </div>
   </body>
 </html>
