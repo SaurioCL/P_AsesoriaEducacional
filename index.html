@@ -182,17 +182,18 @@
         </div>
 
         <form class="contacto-form" action="https://formsubmit.co/m.delcampo93@gmail.com" method="POST">
+          
           <input type="hidden" name="_next" value="#popup-confirmacion">
           <input type="hidden" name="_captcha" value="false">
 
           <label>Nombre *</label>
-          <input type="text" class="form-control" placeholder="Escribe tu Nombre Completo" required/>
+          <input type="text" name="nombre" class="form-control" placeholder="Escribe tu Nombre Completo" required/>
           <label>Teléfono</label>
-          <input type="tel" class="form-control" placeholder="+56 9" />
+          <input type="tel" name="telefono" class="form-control" placeholder="+56 9" />
           <label>Email *</label>
-          <input type="email" class="form-control" placeholder="Escribe tu Email" required/>
+          <input type="email" name="email" class="form-control" placeholder="Escribe tu Email" required/>
           <label>¿Cómo te podemos ayudar?</label>
-          <textarea class="form-control" placeholder="Descripcion de tu consulta o solicitud" required></textarea>
+          <textarea name="mensaje" class="form-control" placeholder="Descripcion de tu consulta o solicitud" required></textarea>
           <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
         </form>
       </div>
