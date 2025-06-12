@@ -179,3 +179,64 @@
     }
   }
 }
+
+@include respond-to(sm) {
+  .contacto {
+    margin: 96px 0;
+
+    .contacto-contain {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    .contacto-info {
+      width: 100%;
+      margin: 0;
+      height: auto;
+      border-radius: 16px 16px 0 0;
+      padding: 48px 32px;
+
+      .text-info {
+        margin: 0;
+
+        h2,
+        p,
+        strong {
+          text-align: center;
+        }
+      }
+
+      .item-contacto-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 32px;
+        width: 100%;
+      }
+
+      .item-contacto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        text-align: left;
+        margin-bottom: 0;
+
+        i {
+          font-size: 28px;
+        }
+
+        strong,
+        p {
+          font-size: 11px;
+          line-height: 1.2;
+          margin: 0;
+          gap: 2px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

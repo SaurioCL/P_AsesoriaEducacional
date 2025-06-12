@@ -625,6 +625,58 @@ p {
     gap: 14px;
   }
 }
+@media (max-width: 480px) {
+  .contacto {
+    margin: 96px 0;
+  }
+  .contacto .contacto-contain {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+  .contacto .contacto-info {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    border-radius: 16px 16px 0 0;
+    padding: 48px 32px;
+  }
+  .contacto .contacto-info .text-info {
+    margin: 0;
+  }
+  .contacto .contacto-info .text-info h2,
+  .contacto .contacto-info .text-info p,
+  .contacto .contacto-info .text-info strong {
+    text-align: center;
+  }
+  .contacto .contacto-info .item-contacto-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 32px;
+    width: 100%;
+  }
+  .contacto .contacto-info .item-contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .contacto .contacto-info .item-contacto i {
+    font-size: 28px;
+  }
+  .contacto .contacto-info .item-contacto strong,
+  .contacto .contacto-info .item-contacto p {
+    font-size: 11px;
+    line-height: 1.2;
+    margin: 0;
+    gap: 2px;
+    align-items: center;
+  }
+}
 .footer {
   background-color: #13364C;
   padding: 24px 72px;
