@@ -52,6 +52,11 @@ p {
   margin: 24px 0 64px;
 }
 
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 38px;
+  }
+}
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -130,49 +135,61 @@ p {
   background-color: transparent;
   color: #13364C;
 }
+.site-header .hamburger {
+  display: none;
+}
+
+.site-header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
 @media (max-width: 1024px) {
   .site-header {
-    padding: 20px 48px;
+    padding: 20px 24px;
   }
   .site-header .logo {
     width: 120px;
   }
   .site-header .btn {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-}
-@media (max-width: 768px) {
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    display: none;
   }
   .site-header .main-nav {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    padding: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
   }
   .site-header .main-nav a {
-    font-size: 16px;
-    padding: 4px 0;
+    padding: 12px 0;
   }
-  .site-header .btn {
-    align-self: stretch;
-    text-align: center;
+  .site-header .menu-toggle {
+    display: none;
   }
-}
-@media (max-width: 480px) {
-  .site-header {
-    padding: 16px;
+  .site-header .menu-toggle:checked ~ .main-nav {
+    display: flex;
   }
-  .site-header .logo {
-    width: 100px;
+  .site-header .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 16px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #13364C;
   }
-  .site-header .btn {
-    font-size: 14px;
-    padding: 6px 10px;
+  .site-header__wrap {
+    flex-wrap: wrap;
   }
 }
 .hero {
@@ -201,15 +218,15 @@ p {
     align-items: center;
     gap: 32px;
   }
-  .hero .hero-text h1 {
-    font-size: 32px;
+  .hero .hero-contain .hero-text h1 {
+    font-size: 48px;
     margin-bottom: 16px;
   }
-  .hero .hero-text p {
-    font-size: 16px;
+  .hero .hero-contain .hero-text p {
+    font-size: 24px;
     margin-bottom: 24px;
   }
-  .hero .hero-text .btn {
+  .hero .hero-contain .hero-text .btn {
     font-size: 14px;
     padding: 10px 20px;
   }
@@ -696,6 +713,7 @@ p {
   .footer .footer-contenido {
     flex-direction: column;
     align-items: center;
+    gap: 0;
   }
   .footer .footer-contenido p {
     position: static;

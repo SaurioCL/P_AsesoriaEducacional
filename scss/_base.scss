@@ -51,3 +51,9 @@ p {
   color: $background-color;
   margin: 24px 0 64px;
 }
+
+@include respond-to(lg) {
+  h1 {
+    font-size: 38px;
+  }
+}
