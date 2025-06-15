@@ -31,6 +31,8 @@ P_AsesoriaEducacional/
 ├── assets/
 ├── css/
 ├── scss/
+├── contacto.php
+├── gracias.html
 ├── index.html
 └── README.md
 
