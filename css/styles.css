@@ -197,7 +197,7 @@ p {
     text-align: center;
     position: absolute;
     top: 100%;
-    margin: 0 auto;
+    margin: 0;
     width: 100%;
     background-color: white;
     padding: 16px 0;
@@ -226,6 +226,10 @@ p {
     flex-wrap: wrap;
   }
 }
+.menu-toggle {
+  display: none;
+}
+
 .hero {
   background: linear-gradient(0deg, rgba(68, 74, 85, 0.79) 0%, rgba(68, 74, 85, 0.79) 100%), url("../assets/img/bg-hero.jpg") center/cover no-repeat;
   height: 664px;
